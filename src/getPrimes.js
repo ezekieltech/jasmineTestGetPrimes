@@ -18,4 +18,10 @@ function getPrimes (n) {
     if (n==1){return output;}
     if (n<=0){return console.log('Your input should be a positive number');}
 
+ // An array of boolean values
+ 
+    for (var i = 0; i < n; i++) {
+        array.push(true);
+    }
+
 }
