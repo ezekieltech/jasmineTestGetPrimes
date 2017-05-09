@@ -16,10 +16,10 @@ function getPrimes (n) {
   //take care of edge cases
     var output = [];
     if (n==1){return output;}
-    if (n<=0){return console.log('Your input should be a positive number');}
+    if (n<=0){return 'Your input should be a positive number';}
 
  // An array of boolean values
- 
+    var array = [], upperLimit = Math.sqrt(n);
     for (var i = 0; i < n; i++) {
         array.push(true);
     }
