@@ -32,4 +32,13 @@ function getPrimes (n) {
             }
         }
     }
+
+     // All array[i] set to true are primes
+    for (var i = 2; i < n; i++) {
+        if(array[i]) {
+            output.push(i);
+        }
+    }
+
+    return output;
 }
