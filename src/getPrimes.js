@@ -24,4 +24,12 @@ function getPrimes (n) {
         array.push(true);
     }
 
+// implementing the for loop, this remove duplicates
+    for (var i = 2; i <= upperLimit; i++) {
+        if (array[i]) {
+            for (var j = i * i; j < n; j += i) {
+                array[j] = false;
+            }
+        }
+    }
 }
