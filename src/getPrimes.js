@@ -13,5 +13,9 @@ function getPrimes (n) {
  
  Output: all i such that A[i] is true.
  */
+  //take care of edge cases
+    var output = [];
+    if (n==1){return output;}
+    if (n<=0){return console.log('Your input should be a positive number');}
 
 }
